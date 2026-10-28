@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "crewai-blockchainiq"
+version = "0.1.0"
+description = "Blockchain IQ x402 v2 tools for Crewai"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = "MIT"
+authors = [{name = "Sihu Park"}]
+dependencies = ["crewai>=1.15,<2", "x402[evm,httpx]==2.25.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/crewai_blockchainiq"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
