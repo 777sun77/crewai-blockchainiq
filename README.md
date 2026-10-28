@@ -82,8 +82,10 @@ The direct client is also available as `crewai_blockchainiq.client.fetch`.
 
 ## Proof of a paid call
 
-Live paid `/brief` settlement transaction: _pending — added here once the funded
-test run completes._
+A live paid `/brief` call ($0.01 USDC on Base) made by this integration's
+`python examples/paid_call.py` on 2026-10-28 settled in transaction
+[`0x69de6ca58a686c35247862f9ab5aee9cbe738a7ce374b36ec00e81b71970ca72`](https://basescan.org/tx/0x69de6ca58a686c35247862f9ab5aee9cbe738a7ce374b36ec00e81b71970ca72)
+(payer `0x7Dfe0d168B76267D6331859ACa5B1745759e2E01`, x402 v2 exact, `eip155:8453`).
 
 Mock tests verify SDK signing and receipt extraction without spending funds.
 
